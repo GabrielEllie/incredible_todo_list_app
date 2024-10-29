@@ -7,7 +7,10 @@ import {
     ScrollView,
 } from 'react-native';
 
-function ToDoList() {
+function ToDoList({ tasks }) {
+
+  
+
     return (
       <ScrollView>
         <Pressable>
@@ -25,6 +28,15 @@ function ToDoList() {
             <Text style={styles.taskText}>Walk dog</Text>
           </View>
         </Pressable>
+        <Text> </Text>
+        <Text>Lab 3 work:</Text>
+        {tasks.map((task) => 
+        <Pressable>
+          <View style={[styles.task]}>
+            <Text style={styles.taskText}>{task}</Text>
+          </View>
+        </Pressable>
+        )}
       </ScrollView>
     );
 };
