@@ -16,12 +16,19 @@ function App() {
     'Go to gym',
     'Walk dog'
   ]);
+
+  const addTask = (task) => {
+    if (toDo.includes(task)) {
+      alert('Can\'t have duplicate tasks')
+    } else {
+      setToDo([...toDo, task]);
+    }
+  }
   
   return (
     <View>
-      <Text>Lab 2 Work:</Text>
       <ToDoList tasks={toDo}/>
-      <ToDoForm />
+      <ToDoForm addTaskFunc={addTask} />
     </View>
   );
 }

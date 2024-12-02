@@ -13,7 +13,8 @@ function ToDoList({ tasks }) {
 
     return (
       <ScrollView>
-        <Pressable>
+        {/* ------------ This is for Lab 2, cleaned it up so it doesn't show ------------ 
+          <Pressable>
           <View style={[styles.task, styles.completed]}>
             <Text style={styles.taskText}>Do laundry</Text>
           </View>
@@ -27,9 +28,8 @@ function ToDoList({ tasks }) {
           <View style={[styles.task, styles.completed]}>
             <Text style={styles.taskText}>Walk dog</Text>
           </View>
-        </Pressable>
-        <Text> </Text>
-        <Text>Lab 3 work:</Text>
+        </Pressable> */}
+        
         {tasks.map((task) => 
         <Pressable>
           <View style={[styles.task]}>
