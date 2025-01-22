@@ -7,6 +7,7 @@ export default function Page() {
       <View style={styles.main}>
         <Text style={styles.title}>CPRG303 Labs</Text>
         <App />
+        <Text>This it a test update</Text>
       </View>
     </View>
   );
