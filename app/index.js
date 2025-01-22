@@ -8,6 +8,7 @@ export default function Page() {
         <Text style={styles.title}>CPRG303 Labs</Text>
         <App />
         <Text>This it a test update</Text>
+        <Text>This it a test updateEEEEEEEEEEEEEEEEE</Text>
       </View>
     </View>
   );
